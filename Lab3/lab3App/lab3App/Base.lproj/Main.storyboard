@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LhT-NZ-xaG">
+                                <rect key="frame" x="0.0" y="-11" width="414" height="919"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="XZJ-UZ-uIR">
+                                <rect key="frame" x="22.5" y="319" width="369" height="258.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="aat-ZL-agt">
+                                        <rect key="frame" x="96" y="0.0" width="177.5" height="81.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an option below:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-69-4tV">
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Mle-nB-Mhj">
+                                                <rect key="frame" x="0.0" y="50.5" width="177.5" height="32"/>
+                                                <segments>
+                                                    <segment title="Blue"/>
+                                                    <segment title="Red"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZD2-D4-u2z"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="JPG-Lf-ilu">
+                                        <rect key="frame" x="42" y="139.5" width="285" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make all Caps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYG-6U-2e8">
+                                                <rect key="frame" x="0.0" y="0.0" width="106" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="148-B5-JSS">
+                                                <rect key="frame" x="236" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="capBtAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="abD-Tk-FaG"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KJJ-bw-dtz">
+                                        <rect key="frame" x="0.0" y="228.5" width="369" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bge-iy-3Dm">
+                                                <rect key="frame" x="0.0" y="4.5" width="18" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="6" maxValue="22" translatesAutoresizingMaskIntoConstraints="NO" id="pRX-TA-cak">
+                                                <rect key="frame" x="36" y="0.0" width="335" height="31"/>
+                                                <connections>
+                                                    <action selector="changeFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="L82-wk-scD"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KJJ-bw-dtz" firstAttribute="leading" secondItem="XZJ-UZ-uIR" secondAttribute="leading" id="3fA-7L-4Zd"/>
+                                    <constraint firstAttribute="trailing" secondItem="KJJ-bw-dtz" secondAttribute="trailing" id="Id2-9F-VTh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LhT-NZ-xaG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3jk-q4-aib"/>
+                            <constraint firstItem="XZJ-UZ-uIR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TmA-5K-zcr"/>
+                            <constraint firstItem="LhT-NZ-xaG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-55" id="cob-bO-ZxD"/>
+                            <constraint firstItem="XZJ-UZ-uIR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hag-3p-FOL"/>
+                            <constraint firstItem="LhT-NZ-xaG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="so6-Qa-7bc"/>
+                            <constraint firstItem="LhT-NZ-xaG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tOh-kr-GXn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="capBt" destination="148-B5-JSS" id="2pb-tI-iQP"/>
+                        <outlet property="capsLabel" destination="wYG-6U-2e8" id="tiA-jL-mUf"/>
+                        <outlet property="fontSizeLabel" destination="bge-iy-3Dm" id="i2b-vA-LQd"/>
+                        <outlet property="imageControl" destination="Mle-nB-Mhj" id="6Rs-9p-VYe"/>
+                        <outlet property="imageLabel" destination="jNu-69-4tV" id="Fg9-RB-mPh"/>
+                        <outlet property="mainImage" destination="LhT-NZ-xaG" id="2Uk-UL-djI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
