@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucrum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhg-nh-DHF">
+                                <rect key="frame" x="129" y="180" width="156" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6K8-5G-NDr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="candlestick" translatesAutoresizingMaskIntoConstraints="NO" id="Vzo-sK-uwN">
+                                <rect key="frame" x="60" y="302" width="295" height="292"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vzo-sK-uwN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DoM-P5-U6V"/>
+                            <constraint firstItem="Vzo-sK-uwN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FPA-CC-GyL"/>
+                            <constraint firstItem="Rhg-nh-DHF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="136" id="JiX-AI-jqZ"/>
+                            <constraint firstItem="Vzo-sK-uwN" firstAttribute="top" secondItem="Rhg-nh-DHF" secondAttribute="bottom" constant="86" id="R5b-eu-mMf"/>
+                            <constraint firstItem="Rhg-nh-DHF" firstAttribute="centerX" secondItem="Vzo-sK-uwN" secondAttribute="centerX" id="hEe-9x-Pw6"/>
+                            <constraint firstItem="Rhg-nh-DHF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="rKP-21-bU2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="candlestick" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
