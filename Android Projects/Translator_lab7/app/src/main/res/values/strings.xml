@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Translator</string>
+    <string name="btTranslate">Translate</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="italian">Italian</string>
+    <string name="capitalize">Capitalize</string>
+    <string name="howAreYou">How are you</string>
+    <string name="hi">Hi</string>
+    <string name="txtColor">Set red color</string>
+    <string-array name="type">
+        <item>Dog</item>
+        <item>Cat</item>
+    </string-array>
+    <string-array name="animalType">
+        <item>Dog</item>
+        <item>Cat</item>
+    </string-array>
+    <string-array name="testSpinner">
+        <item>Test1</item>
+        <item>Test2</item>
+    </string-array>
+</resources>
