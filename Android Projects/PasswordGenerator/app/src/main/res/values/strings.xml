@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PasswordGenerator</string>
+    <string name="enterWord">Enter a word to attach to a password</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="selectNumbers">Select the amount of numbers you want</string>
+    <string name="selectSpecial">Select the amount of special characters you want</string>
+    <string name="special1">1</string>
+    <string name="special2">2</string>
+    <string name="special3">3</string>
+    <string name="special4">4</string>
+    <string name="generatePassword">Generate Password</string>
+    <string name="hidePass">Hide Passwords</string>
+</resources>
